@@ -10,6 +10,7 @@ class UserStocksController < ApplicationController
       "Stock #{@user_stock.stock.name} was successfully added to portfólio"
     redirect_to my_portfolio_path
   end
+
   def destroy
     stock = Stock.find(params[:id])
     @user_stock =
